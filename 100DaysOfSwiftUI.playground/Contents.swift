@@ -161,8 +161,28 @@ let exampleOffice = Office(rooms: 30, cost: 12000000, agent: "Taytay inc")
 exampleOffice.printSummary()
 
 // Day 14
+// Optionals, nil coalescing, and checkpoint 9
 
-// Day 15
-// Consolidation
+func square(number: Int) -> Int {
+    number * number
+}
 
+var number: Int? = nil
 
+// unwrap
+
+if let number = number {
+    print(square(number: number))
+}
+
+// Guard
+
+func printSquare(of number: Int?) {
+    guard let number = number else {
+        print("Missing input")
+        return
+    }
+    print("\(number) x \(number) is \(number * number)")
+}
+
+// Use if let if you just want to unwrap some optionals, but prefer guard let if you’re specifically checking that conditions are correct before continuing.
