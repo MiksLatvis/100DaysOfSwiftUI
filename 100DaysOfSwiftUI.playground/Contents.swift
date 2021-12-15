@@ -1,3 +1,5 @@
+// Introduction to Swift
+
 // Day 1
 
 // Day 9
@@ -157,3 +159,10 @@ exampleHouse.printSummary()
 
 let exampleOffice = Office(rooms: 30, cost: 12000000, agent: "Taytay inc")
 exampleOffice.printSummary()
+
+// Day 14
+
+// Day 15
+// Consolidation
+
+
