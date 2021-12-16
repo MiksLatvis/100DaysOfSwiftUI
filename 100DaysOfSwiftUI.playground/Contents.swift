@@ -186,3 +186,22 @@ func printSquare(of number: Int?) {
 }
 
 // Use if let if you just want to unwrap some optionals, but prefer guard let if you’re specifically checking that conditions are correct before continuing.
+
+// nil coalescing
+
+let captains = ["Enterprise" : "Picard"]
+let new = captains["Serenity"] ?? "N/A"
+
+// optional chaining
+
+let names = ["Arya", "Bran", "Robb", "Sansa"]
+
+let chosen = names.randomElement()?.uppercased() ?? "No one"
+print("Next in line: \(chosen)")
+
+// Checkpoint 9
+
+func getNumber(in array: [Int?]?) -> Int {
+    lazy var random = Int.random(in: 1...100) // only generated if used
+    return (array?.randomElement() ?? random) ?? random
+}
