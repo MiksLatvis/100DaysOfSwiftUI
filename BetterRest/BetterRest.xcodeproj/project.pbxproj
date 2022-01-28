@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BAFA040D27A16AA000C72588 /* RockPaperScissorsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFA040C27A16AA000C72588 /* RockPaperScissorsApp.swift */; };
-		BAFA040F27A16AA000C72588 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFA040E27A16AA000C72588 /* ContentView.swift */; };
-		BAFA041127A16AA000C72588 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAFA041027A16AA000C72588 /* Assets.xcassets */; };
-		BAFA041427A16AA000C72588 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAFA041327A16AA000C72588 /* Preview Assets.xcassets */; };
+		BA19930B27A2BEA900D9F681 /* BetterRestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA19930A27A2BEA900D9F681 /* BetterRestApp.swift */; };
+		BA19930D27A2BEA900D9F681 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA19930C27A2BEA900D9F681 /* ContentView.swift */; };
+		BA19930F27A2BEAA00D9F681 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA19930E27A2BEAA00D9F681 /* Assets.xcassets */; };
+		BA19931227A2BEAA00D9F681 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA19931127A2BEAA00D9F681 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BAFA040927A16AA000C72588 /* RockPaperScissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockPaperScissors.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAFA040C27A16AA000C72588 /* RockPaperScissorsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsApp.swift; sourceTree = "<group>"; };
-		BAFA040E27A16AA000C72588 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		BAFA041027A16AA000C72588 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BAFA041327A16AA000C72588 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BA19930727A2BEA900D9F681 /* BetterRest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterRest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA19930A27A2BEA900D9F681 /* BetterRestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRestApp.swift; sourceTree = "<group>"; };
+		BA19930C27A2BEA900D9F681 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BA19930E27A2BEAA00D9F681 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA19931127A2BEAA00D9F681 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BAFA040627A16AA000C72588 /* Frameworks */ = {
+		BA19930427A2BEA900D9F681 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,37 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BAFA040027A16AA000C72588 = {
+		BA1992FE27A2BEA900D9F681 = {
 			isa = PBXGroup;
 			children = (
-				BAFA040B27A16AA000C72588 /* RockPaperScissors */,
-				BAFA040A27A16AA000C72588 /* Products */,
+				BA19930927A2BEA900D9F681 /* BetterRest */,
+				BA19930827A2BEA900D9F681 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		BAFA040A27A16AA000C72588 /* Products */ = {
+		BA19930827A2BEA900D9F681 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BAFA040927A16AA000C72588 /* RockPaperScissors.app */,
+				BA19930727A2BEA900D9F681 /* BetterRest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BAFA040B27A16AA000C72588 /* RockPaperScissors */ = {
+		BA19930927A2BEA900D9F681 /* BetterRest */ = {
 			isa = PBXGroup;
 			children = (
-				BAFA040C27A16AA000C72588 /* RockPaperScissorsApp.swift */,
-				BAFA040E27A16AA000C72588 /* ContentView.swift */,
-				BAFA041027A16AA000C72588 /* Assets.xcassets */,
-				BAFA041227A16AA000C72588 /* Preview Content */,
+				BA19930A27A2BEA900D9F681 /* BetterRestApp.swift */,
+				BA19930C27A2BEA900D9F681 /* ContentView.swift */,
+				BA19930E27A2BEAA00D9F681 /* Assets.xcassets */,
+				BA19931027A2BEAA00D9F681 /* Preview Content */,
 			);
-			path = RockPaperScissors;
+			path = BetterRest;
 			sourceTree = "<group>";
 		};
-		BAFA041227A16AA000C72588 /* Preview Content */ = {
+		BA19931027A2BEAA00D9F681 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				BAFA041327A16AA000C72588 /* Preview Assets.xcassets */,
+				BA19931127A2BEAA00D9F681 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -70,39 +70,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BAFA040827A16AA000C72588 /* RockPaperScissors */ = {
+		BA19930627A2BEA900D9F681 /* BetterRest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BAFA041727A16AA000C72588 /* Build configuration list for PBXNativeTarget "RockPaperScissors" */;
+			buildConfigurationList = BA19931527A2BEAA00D9F681 /* Build configuration list for PBXNativeTarget "BetterRest" */;
 			buildPhases = (
-				BAFA040527A16AA000C72588 /* Sources */,
-				BAFA040627A16AA000C72588 /* Frameworks */,
-				BAFA040727A16AA000C72588 /* Resources */,
+				BA19930327A2BEA900D9F681 /* Sources */,
+				BA19930427A2BEA900D9F681 /* Frameworks */,
+				BA19930527A2BEA900D9F681 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = RockPaperScissors;
-			productName = RockPaperScissors;
-			productReference = BAFA040927A16AA000C72588 /* RockPaperScissors.app */;
+			name = BetterRest;
+			productName = BetterRest;
+			productReference = BA19930727A2BEA900D9F681 /* BetterRest.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		BAFA040127A16AA000C72588 /* Project object */ = {
+		BA1992FF27A2BEA900D9F681 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					BAFA040827A16AA000C72588 = {
+					BA19930627A2BEA900D9F681 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = BAFA040427A16AA000C72588 /* Build configuration list for PBXProject "RockPaperScissors" */;
+			buildConfigurationList = BA19930227A2BEA900D9F681 /* Build configuration list for PBXProject "BetterRest" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,42 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = BAFA040027A16AA000C72588;
-			productRefGroup = BAFA040A27A16AA000C72588 /* Products */;
+			mainGroup = BA1992FE27A2BEA900D9F681;
+			productRefGroup = BA19930827A2BEA900D9F681 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BAFA040827A16AA000C72588 /* RockPaperScissors */,
+				BA19930627A2BEA900D9F681 /* BetterRest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BAFA040727A16AA000C72588 /* Resources */ = {
+		BA19930527A2BEA900D9F681 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAFA041427A16AA000C72588 /* Preview Assets.xcassets in Resources */,
-				BAFA041127A16AA000C72588 /* Assets.xcassets in Resources */,
+				BA19931227A2BEAA00D9F681 /* Preview Assets.xcassets in Resources */,
+				BA19930F27A2BEAA00D9F681 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BAFA040527A16AA000C72588 /* Sources */ = {
+		BA19930327A2BEA900D9F681 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAFA040F27A16AA000C72588 /* ContentView.swift in Sources */,
-				BAFA040D27A16AA000C72588 /* RockPaperScissorsApp.swift in Sources */,
+				BA19930D27A2BEA900D9F681 /* ContentView.swift in Sources */,
+				BA19930B27A2BEA900D9F681 /* BetterRestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		BAFA041527A16AA000C72588 /* Debug */ = {
+		BA19931327A2BEAA00D9F681 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -196,7 +196,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -206,7 +206,7 @@
 			};
 			name = Debug;
 		};
-		BAFA041627A16AA000C72588 /* Release */ = {
+		BA19931427A2BEAA00D9F681 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -251,7 +251,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -261,14 +261,14 @@
 			};
 			name = Release;
 		};
-		BAFA041827A16AA000C72588 /* Debug */ = {
+		BA19931627A2BEAA00D9F681 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"RockPaperScissors/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BetterRest/Preview Content\"";
 				DEVELOPMENT_TEAM = P4XYP9WP44;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -282,7 +282,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mikslatvis.RockPaperScissors;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikslatvis.BetterRest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -290,14 +290,14 @@
 			};
 			name = Debug;
 		};
-		BAFA041927A16AA000C72588 /* Release */ = {
+		BA19931727A2BEAA00D9F681 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"RockPaperScissors/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BetterRest/Preview Content\"";
 				DEVELOPMENT_TEAM = P4XYP9WP44;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -311,7 +311,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mikslatvis.RockPaperScissors;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikslatvis.BetterRest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -322,25 +322,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BAFA040427A16AA000C72588 /* Build configuration list for PBXProject "RockPaperScissors" */ = {
+		BA19930227A2BEA900D9F681 /* Build configuration list for PBXProject "BetterRest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BAFA041527A16AA000C72588 /* Debug */,
-				BAFA041627A16AA000C72588 /* Release */,
+				BA19931327A2BEAA00D9F681 /* Debug */,
+				BA19931427A2BEAA00D9F681 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BAFA041727A16AA000C72588 /* Build configuration list for PBXNativeTarget "RockPaperScissors" */ = {
+		BA19931527A2BEAA00D9F681 /* Build configuration list for PBXNativeTarget "BetterRest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BAFA041827A16AA000C72588 /* Debug */,
-				BAFA041927A16AA000C72588 /* Release */,
+				BA19931627A2BEAA00D9F681 /* Debug */,
+				BA19931727A2BEAA00D9F681 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = BAFA040127A16AA000C72588 /* Project object */;
+	rootObject = BA1992FF27A2BEA900D9F681 /* Project object */;
 }

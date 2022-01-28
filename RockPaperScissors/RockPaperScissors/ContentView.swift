@@ -36,7 +36,7 @@ struct ContentView: View {
                     .foregroundStyle(.secondary)
                 Spacer()
                 Text("Turn \(questionCounter) of 10")
-                Text("You have to \(goal[currentGoal]) \(move[currentMove])")
+                Text("You have to \(goal[currentGoal]) to \(move[currentMove])")
                     .padding(20)
                     .font(.system(size: 22))
                     .background(Color(red: 0.1, green: 0.5, blue: 0.5, opacity: 0.3))
