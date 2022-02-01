@@ -16,6 +16,8 @@ struct ContentView: View {
     @State private var errorMessage = ""
     @State private var showingError = false
     
+    @State private var score = 0
+    
     var body: some View {
         NavigationView {
             List {
@@ -23,7 +25,7 @@ struct ContentView: View {
                     TextField("Enter your word", text: $newWord)
                         .autocapitalization(.none)
                 }
-
+                
                 Section {
                     ForEach(usedWords, id: \.self) { word in
                         HStack {
@@ -34,6 +36,17 @@ struct ContentView: View {
                 }
             }
             .navigationTitle(rootWord)
+            .toolbar {
+                Button("New Game", action: startGame)
+            }
+            .safeAreaInset(edge: .bottom) {
+                Text("Score: \(score)")
+                    .frame(maxWidth: .infinity)
+                    .padding()
+                    .background(.blue)
+                    .foregroundColor(.white)
+                    .font(.title)
+            }
             .onSubmit(addNewWord)
             .onAppear(perform: startGame)
             .alert(errorTitle, isPresented: $showingError) {
@@ -48,7 +61,15 @@ struct ContentView: View {
         let answer = newWord.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
 
         // exit if the remaining string is empty
-        guard answer.count > 0 else { return }
+        guard answer.count > 2 else {
+            wordError(title: "Not enough letters", message: "Use at least 3 letters")
+            return
+        }
+        
+        guard isTheSame(word: answer) else {
+            wordError(title: "Can't use the start word", message: "Be more original")
+            return
+        }
 
         guard isOriginal(word: answer) else {
             wordError(title: "Word used already", message: "Be more original")
@@ -64,7 +85,7 @@ struct ContentView: View {
             wordError(title: "Word not recognized", message: "You can't just make them up, you know!")
             return
         }
-        
+        score = score + answer.count
         withAnimation {
             usedWords.insert(answer, at: 0)
         }
@@ -72,6 +93,9 @@ struct ContentView: View {
     }
     
     func startGame() {
+        newWord = ""
+        usedWords.removeAll()
+        score = 0
         // 1. Find the URL for start.txt in our app bundle
         if let startWordsURL = Bundle.main.url(forResource: "start", withExtension: "txt") {
             // 2. Load start.txt into a string
@@ -89,6 +113,14 @@ struct ContentView: View {
 
         // If were are *here* then there was a problem – trigger a crash and report the error
         fatalError("Could not load start.txt from bundle.")
+    }
+    
+    func isTheSame(word: String) -> Bool {
+        if rootWord == word {
+            return false
+        } else {
+            return true
+        }
     }
     
     func isOriginal(word: String) -> Bool {
