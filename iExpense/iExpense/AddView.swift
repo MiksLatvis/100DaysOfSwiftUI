@@ -22,14 +22,14 @@ struct AddView: View {
             Form {
                 TextField("Name", text: $name)
 
-                    Picker("Type", selection: $type) {
-                        ForEach(types, id: \.self) {
-                            Text($0)
-                        }
+                Picker("Type", selection: $type) {
+                    ForEach(types, id: \.self) {
+                        Text($0)
                     }
+                }
 
-                    TextField("Amount", value: $amount, format: .currency(code: "USD"))
-                        .keyboardType(.decimalPad)
+                TextField("Amount", value: $amount, format: .localCurrency)
+                    .keyboardType(.decimalPad)
             }
             .navigationTitle("Add new expense")
             .toolbar {
