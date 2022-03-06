@@ -11,18 +11,72 @@
 		BA0F0E0527CE49B9000E2FC4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0F0E0427CE49B9000E2FC4 /* ContentView.swift */; };
 		BA0F0E0727CE49BB000E2FC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA0F0E0627CE49BB000E2FC4 /* Assets.xcassets */; };
 		BA0F0E0A27CE49BB000E2FC4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA0F0E0927CE49BB000E2FC4 /* Preview Assets.xcassets */; };
+		BA59146427D0F39C0009F9EC /* TrendWeight WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BA59146327D0F39C0009F9EC /* TrendWeight WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BA59146F27D0F39E0009F9EC /* TrendWeight WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BA59146E27D0F39E0009F9EC /* TrendWeight WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BA59146527D0F39C0009F9EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA0F0DF727CE49B9000E2FC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA59146227D0F39C0009F9EC;
+			remoteInfo = "TrendWeight WatchKit App";
+		};
+		BA59147027D0F39E0009F9EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA0F0DF727CE49B9000E2FC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA59146D27D0F39E0009F9EC;
+			remoteInfo = "TrendWeight WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BA59148627D0F39E0009F9EC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				BA59146427D0F39C0009F9EC /* TrendWeight WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA59148927D0F39E0009F9EC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BA59146F27D0F39E0009F9EC /* TrendWeight WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		BA0F0DFF27CE49B9000E2FC4 /* Drawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drawing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA0F0DFF27CE49B9000E2FC4 /* TrendWeight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrendWeight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA0F0E0227CE49B9000E2FC4 /* DrawingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingApp.swift; sourceTree = "<group>"; };
 		BA0F0E0427CE49B9000E2FC4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BA0F0E0627CE49BB000E2FC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA0F0E0927CE49BB000E2FC4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BA59146027D0F39C0009F9EC /* TrendWeight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrendWeight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA59146327D0F39C0009F9EC /* TrendWeight WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TrendWeight WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA59146E27D0F39E0009F9EC /* TrendWeight WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TrendWeight WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BA0F0DFC27CE49B9000E2FC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA59146B27D0F39E0009F9EC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,7 +97,10 @@
 		BA0F0E0027CE49B9000E2FC4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BA0F0DFF27CE49B9000E2FC4 /* Drawing.app */,
+				BA0F0DFF27CE49B9000E2FC4 /* TrendWeight.app */,
+				BA59146027D0F39C0009F9EC /* TrendWeight.app */,
+				BA59146327D0F39C0009F9EC /* TrendWeight WatchKit App.app */,
+				BA59146E27D0F39E0009F9EC /* TrendWeight WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,8 +141,59 @@
 			);
 			name = Drawing;
 			productName = Drawing;
-			productReference = BA0F0DFF27CE49B9000E2FC4 /* Drawing.app */;
+			productReference = BA0F0DFF27CE49B9000E2FC4 /* TrendWeight.app */;
 			productType = "com.apple.product-type.application";
+		};
+		BA59145F27D0F39C0009F9EC /* TrendWeight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA59148E27D0F39E0009F9EC /* Build configuration list for PBXNativeTarget "TrendWeight" */;
+			buildPhases = (
+				BA59145E27D0F39C0009F9EC /* Resources */,
+				BA59148627D0F39E0009F9EC /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA59146627D0F39C0009F9EC /* PBXTargetDependency */,
+			);
+			name = TrendWeight;
+			productName = TrendWeight;
+			productReference = BA59146027D0F39C0009F9EC /* TrendWeight.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		BA59146227D0F39C0009F9EC /* TrendWeight WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA59148D27D0F39E0009F9EC /* Build configuration list for PBXNativeTarget "TrendWeight WatchKit App" */;
+			buildPhases = (
+				BA59146127D0F39C0009F9EC /* Resources */,
+				BA59148927D0F39E0009F9EC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA59147127D0F39E0009F9EC /* PBXTargetDependency */,
+			);
+			name = "TrendWeight WatchKit App";
+			productName = "TrendWeight WatchKit App";
+			productReference = BA59146327D0F39C0009F9EC /* TrendWeight WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		BA59146D27D0F39E0009F9EC /* TrendWeight WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA59148C27D0F39E0009F9EC /* Build configuration list for PBXNativeTarget "TrendWeight WatchKit Extension" */;
+			buildPhases = (
+				BA59146A27D0F39E0009F9EC /* Sources */,
+				BA59146B27D0F39E0009F9EC /* Frameworks */,
+				BA59146C27D0F39E0009F9EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TrendWeight WatchKit Extension";
+			productName = "TrendWeight WatchKit Extension";
+			productReference = BA59146E27D0F39E0009F9EC /* TrendWeight WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +206,15 @@
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					BA0F0DFE27CE49B9000E2FC4 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					BA59145F27D0F39C0009F9EC = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					BA59146227D0F39C0009F9EC = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					BA59146D27D0F39E0009F9EC = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
@@ -116,6 +233,9 @@
 			projectRoot = "";
 			targets = (
 				BA0F0DFE27CE49B9000E2FC4 /* Drawing */,
+				BA59145F27D0F39C0009F9EC /* TrendWeight */,
+				BA59146227D0F39C0009F9EC /* TrendWeight WatchKit App */,
+				BA59146D27D0F39E0009F9EC /* TrendWeight WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +247,27 @@
 			files = (
 				BA0F0E0A27CE49BB000E2FC4 /* Preview Assets.xcassets in Resources */,
 				BA0F0E0727CE49BB000E2FC4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA59145E27D0F39C0009F9EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA59146127D0F39C0009F9EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA59146C27D0F39E0009F9EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +283,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BA59146A27D0F39E0009F9EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA59146627D0F39C0009F9EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA59146227D0F39C0009F9EC /* TrendWeight WatchKit App */;
+			targetProxy = BA59146527D0F39C0009F9EC /* PBXContainerItemProxy */;
+		};
+		BA59147127D0F39E0009F9EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA59146D27D0F39E0009F9EC /* TrendWeight WatchKit Extension */;
+			targetProxy = BA59147027D0F39E0009F9EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		BA0F0E0B27CE49BB000E2FC4 /* Debug */ = {
@@ -283,7 +444,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mikslatvis.Drawing;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TrendWeight;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -312,10 +473,148 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mikslatvis.Drawing;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TrendWeight;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BA59148427D0F39E0009F9EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P4XYP9WP44;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikslatvis.TrendWeight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BA59148527D0F39E0009F9EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P4XYP9WP44;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikslatvis.TrendWeight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BA59148727D0F39E0009F9EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P4XYP9WP44;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = TrendWeight_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "TrendWeight WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikslatvis.TrendWeight.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		BA59148827D0F39E0009F9EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P4XYP9WP44;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = TrendWeight_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "TrendWeight WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikslatvis.TrendWeight.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		BA59148A27D0F39E0009F9EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TrendWeight WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = P4XYP9WP44;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TrendWeight WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "TrendWeight WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = ComplicationController;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikslatvis.TrendWeight.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		BA59148B27D0F39E0009F9EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TrendWeight WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = P4XYP9WP44;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TrendWeight WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "TrendWeight WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = ComplicationController;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikslatvis.TrendWeight.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
 			};
 			name = Release;
 		};
@@ -336,6 +635,33 @@
 			buildConfigurations = (
 				BA0F0E0E27CE49BB000E2FC4 /* Debug */,
 				BA0F0E0F27CE49BB000E2FC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA59148C27D0F39E0009F9EC /* Build configuration list for PBXNativeTarget "TrendWeight WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA59148A27D0F39E0009F9EC /* Debug */,
+				BA59148B27D0F39E0009F9EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA59148D27D0F39E0009F9EC /* Build configuration list for PBXNativeTarget "TrendWeight WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA59148727D0F39E0009F9EC /* Debug */,
+				BA59148827D0F39E0009F9EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA59148E27D0F39E0009F9EC /* Build configuration list for PBXNativeTarget "TrendWeight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA59148427D0F39E0009F9EC /* Debug */,
+				BA59148527D0F39E0009F9EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
